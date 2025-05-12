@@ -1,0 +1,11 @@
+{
+    "cmake.sourceDirectory": "C:/Users/0000/Desktop/flutter/application1/linux",
+    "dart.flutterGenerateLocalizationsOnSave": "all",
+    "dart.flutterHotReloadOnSave": "all",
+    "dart.hotReloadOnSave": "all",
+    "files.autoSave": "off",
+    "files.autoSaveDelay": 15,
+    "editor.formatOnSave": true,
+    "files.autoSaveWhenNoErrors": true,
+    "files.autoSaveWorkspaceFilesOnly": true
+}
