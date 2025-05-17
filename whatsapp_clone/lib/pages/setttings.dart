@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class SettingScreen extends StatefulWidget {
   const SettingScreen({super.key});
@@ -13,6 +12,7 @@ class _SettingScreenState extends State<SettingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 5,
         centerTitle: false,
         title: const Text(
           'Paramètres',
@@ -58,9 +58,7 @@ class _SettingScreenState extends State<SettingScreen> {
             ListTile(
               leading: const CircleAvatar(
                 radius: 30,
-                backgroundImage: NetworkImage(
-                  'https://picsum.photos/200',
-                ), // Remplace par ton image
+                backgroundImage: AssetImage("assets/images/souley.jpg"),
               ),
               title: const Text(
                 "Souleymane TRAORE",

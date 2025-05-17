@@ -12,9 +12,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 5,
         centerTitle: false,
         title: const Text(
-          'Whatsapp UI',
+          'Discussion',
           style: TextStyle(
             color: Colors.green,
             fontWeight: FontWeight.bold,
@@ -155,198 +156,151 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
-
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
-              ),
-            ),
-            title: const Text('Issa DEMBELE'),
-            subtitle: const Text(
-              "Yo! grand cava.? Desolé de l'appel manqué je dormais 🤧",
-            ),
-            trailing: const Text('10:30'),
+          const SizedBox(width: 20),
+          //_discussionItem
+          _discussionItem(
+            "Awa",
+            "assets/images/avatar8.jpeg",
+            "Bonjour Souley comment tu vas?",
+            "12:10",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3XWcVEd1f2Sfs43LboWN_lako2E-glsNeRQ&s',
-              ),
-            ),
-            title: const Text("Ma Cherie"),
-            subtitle: const Text(
-              'Heyy ta fille là? Elle est la sur son telephone seulement🤣🤣🤣🤣',
-            ),
-            trailing: const Text('11:00'),
+          _discussionItem(
+            "Collab 2",
+            "assets/images/avatar9.jpeg",
+            "Bonjour chef. Verifie le repot Gith il ya des merges a ?",
+            "08:14",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
-              ),
-            ),
-            title: const Text('Issa DEMBELE'),
-            subtitle: const Text(
-              "Yo! grand cava.? Desolé de l'appel manqué je dormais 🤧",
-            ),
-            trailing: const Text('10:30'),
+          _discussionItem(
+            "Encadrant IA",
+            "assets/images/avatar.jpeg",
+            "Okey TRAORE j'ai vu ton travail je te reviendrai en debut de semaine..",
+            "03:23",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3XWcVEd1f2Sfs43LboWN_lako2E-glsNeRQ&s',
-              ),
-            ),
-            title: const Text("Ma Cherie❤️"),
-            subtitle: const Text(
-              'Heyy ta fille là? Elle est la sur son telephone seulement🤣🤣🤣🤣',
-            ),
-            trailing: const Text('11:00'),
+          _discussionItem(
+            "Kader RCI",
+            "assets/images/avatar9.jpeg",
+            "yf tu verras bien sa reponse. Je te dis rien d'abord",
+            "05:10",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
-              ),
-            ),
-            title: const Text('Issa DEMBELE❤️'),
-            subtitle: const Text(
-              "Yo! grand cava.? Desolé de l'appel manqué je dormais 🤧",
-            ),
-            trailing: const Text('10:30'),
+          _discussionItem(
+            "Grando",
+            "assets/images/avatar3.jpeg",
+            "Bonjour Solo comment tu vas ?",
+            "07:20",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3XWcVEd1f2Sfs43LboWN_lako2E-glsNeRQ&s',
-              ),
-            ),
-            title: const Text("Ma Cherie❤️"),
-            subtitle: const Text(
-              'Heyy ta fille là? Elle est la sur son telephone seulement🤣🤣🤣🤣',
-            ),
-            trailing: const Text('11:00'),
+          _discussionItem(
+            "Adama grand Frere RCI",
+            "assets/images/avatar5.jpeg",
+            "D'accord ya pas de soucis. Porte toi bien p'tit frere",
+            "hier",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
-              ),
-            ),
-            title: const Text('Issa DEMBELE❤️'),
-            subtitle: const Text(
-              "Yo! grand cava.? Desolé de l'appel manqué je dormais 🤧",
-            ),
-            trailing: const Text('10:30'),
+          _discussionItem(
+            "Cherie Zerbo ❤️",
+            "assets/images/avatar9.jpeg",
+            "Bonjour chéri comment tu vas? J'espere que ta matinee se passe bien",
+            "09:02",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3XWcVEd1f2Sfs43LboWN_lako2E-glsNeRQ&s',
-              ),
-            ),
-            title: const Text("Ma Cherie❤️"),
-            subtitle: const Text(
-              'Heyy ta fille là? Elle est la sur son telephone seulement🤣🤣🤣🤣',
-            ),
-            trailing: const Text('11:00'),
+          _discussionItem(
+            "Fati",
+            "assets/images/avatar2.jpeg",
+            "Oui Souleymane alhamdoulilah cava.",
+            "13:23",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
-              ),
-            ),
-            title: const Text('Issa DEMBELE❤️'),
-            subtitle: const Text(
-              "Yo! grand cava.? Desolé de l'appel manqué je dormais 🤧",
-            ),
-            trailing: const Text('10:30'),
+          _discussionItem(
+            "Awa",
+            "assets/images/avatar8.jpeg",
+            "Bonjour Souley comment tu vas?",
+            "12:10",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3XWcVEd1f2Sfs43LboWN_lako2E-glsNeRQ&s',
-              ),
-            ),
-            title: const Text("Ma Cherie❤️"),
-            subtitle: const Text(
-              'Heyy ta fille là? Elle est la sur son telephone seulement🤣🤣🤣🤣',
-            ),
-            trailing: const Text('11:00'),
+          _discussionItem(
+            "Collab 2",
+            "assets/images/avatar9.jpeg",
+            "Bonjour chef. Verifie le repot Gith il ya des merges a ?",
+            "08:14",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
-              ),
-            ),
-            title: const Text('Issa DEMBELE❤️'),
-            subtitle: const Text(
-              "Yo! grand cava.? Desolé de l'appel manqué je dormais 🤧",
-            ),
-            trailing: const Text('10:30'),
+          _discussionItem(
+            "Encadrant IA",
+            "assets/images/avatar.jpeg",
+            "Okey TRAORE j'ai vu ton travail je te reviendrai en debut de semaine..",
+            "03:23",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3XWcVEd1f2Sfs43LboWN_lako2E-glsNeRQ&s',
-              ),
-            ),
-            title: const Text("Ma Cherie❤️"),
-            subtitle: const Text(
-              'Heyy ta fille là? Elle est la sur son telephone seulement🤣🤣🤣🤣',
-            ),
-            trailing: const Text('11:00'),
+          _discussionItem(
+            "Kader RCI",
+            "assets/images/avatar9.jpeg",
+            "yf tu verras bien sa reponse. Je te dis rien d'abord",
+            "05:10",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
-              ),
-            ),
-            title: const Text('Issa DEMBELE❤️'),
-            subtitle: const Text(
-              "Yo! grand cava.? Desolé de l'appel manqué je dormais 🤧",
-            ),
-            trailing: const Text('10:30'),
+          _discussionItem(
+            "Grando",
+            "assets/images/avatar3.jpeg",
+            "Bonjour Solo comment tu vas ?",
+            "07:20",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3XWcVEd1f2Sfs43LboWN_lako2E-glsNeRQ&s',
-              ),
-            ),
-            title: const Text("Ma Cherie❤️"),
-            subtitle: const Text(
-              'Heyy ta fille là? Elle est la sur son telephone seulement🤣🤣🤣🤣',
-            ),
-            trailing: const Text('11:00'),
+          _discussionItem(
+            "Adama grand Frere RCI",
+            "assets/images/avatar5.jpeg",
+            "D'accord ya pas de soucis. Porte toi bien p'tit frere",
+            "hier",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
-              ),
-            ),
-            title: const Text('Issa DEMBELE❤️'),
-            subtitle: const Text(
-              "Yo! grand cava.? Desolé de l'appel manqué je dormais 🤧",
-            ),
-            trailing: const Text('10:30'),
+          _discussionItem(
+            "Cherie Zerbo ❤️",
+            "assets/images/avatar9.jpeg",
+            "Bonjour chéri comment tu vas? J'espere que ta matinee se passe bien",
+            "09:02",
           ),
-          ListTile(
-            leading: const CircleAvatar(
-              backgroundImage: NetworkImage(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3XWcVEd1f2Sfs43LboWN_lako2E-glsNeRQ&s',
-              ),
-            ),
-            title: const Text("Ma Cherie❤️"),
-            subtitle: const Text(
-              'Heyy ta fille là? Elle est la sur son telephone seulement🤣🤣🤣🤣',
-            ),
-            trailing: const Text('11:00'),
+          _discussionItem(
+            "Fati",
+            "assets/images/avatar2.jpeg",
+            "Oui Souleymane alhamdoulilah cava.",
+            "13:23",
+          ),
+          _discussionItem(
+            "Awa",
+            "assets/images/avatar8.jpeg",
+            "Bonjour Souley comment tu vas?",
+            "12:10",
+          ),
+          _discussionItem(
+            "Collab 2",
+            "assets/images/avatar9.jpeg",
+            "Bonjour chef. Verifie le repot Gith il ya des merges a ?",
+            "08:14",
+          ),
+          _discussionItem(
+            "Encadrant IA",
+            "assets/images/avatar.jpeg",
+            "Okey TRAORE j'ai vu ton travail je te reviendrai en debut de semaine..",
+            "03:23",
+          ),
+          _discussionItem(
+            "Kader RCI",
+            "assets/images/avatar9.jpeg",
+            "yf tu verras bien sa reponse. Je te dis rien d'abord",
+            "05:10",
+          ),
+          _discussionItem(
+            "Grando",
+            "assets/images/avatar3.jpeg",
+            "Bonjour Solo comment tu vas ?",
+            "07:20",
+          ),
+          _discussionItem(
+            "Adama grand Frere RCI",
+            "assets/images/avatar5.jpeg",
+            "D'accord ya pas de soucis. Porte toi bien p'tit frere",
+            "hier",
+          ),
+          _discussionItem(
+            "Cherie Zerbo ❤️",
+            "assets/images/avatar9.jpeg",
+            "Bonjour chéri comment tu vas? J'espere que ta matinee se passe bien",
+            "09:02",
+          ),
+          _discussionItem(
+            "Fati",
+            "assets/images/avatar2.jpeg",
+            "Oui Souleymane alhamdoulilah cava.",
+            "13:23",
           ),
         ],
       ),
@@ -357,4 +311,26 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
+}
+
+// LisTile widget
+
+Widget _discussionItem(
+  String title,
+  String imagePath,
+  String message,
+  String time,
+) {
+  return ListTile(
+    onTap: () {
+      //action
+    },
+    leading: CircleAvatar(backgroundImage: AssetImage(imagePath)),
+    title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
+    subtitle: Text(message, maxLines: 1, overflow: TextOverflow.ellipsis),
+    trailing: Text(
+      time,
+      style: const TextStyle(color: Colors.grey, fontSize: 12),
+    ),
+  );
 }

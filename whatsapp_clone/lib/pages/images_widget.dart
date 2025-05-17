@@ -25,6 +25,7 @@ class _ImagesWidgetState extends State<ImagesWidget> {
     return Scaffold(
       body: _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 20.0,
         unselectedItemColor: Colors.black,
         selectedItemColor: Colors.green,
         unselectedLabelStyle: TextStyle(color: Colors.black, fontSize: 14),
