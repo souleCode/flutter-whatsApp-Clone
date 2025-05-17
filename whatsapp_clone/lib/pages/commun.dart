@@ -12,6 +12,7 @@ class _CommunityScreenState extends State<CommunityScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 5,
         centerTitle: false,
         title: const Text(
           'Communautés',
@@ -111,14 +112,14 @@ class _CommunityScreenState extends State<CommunityScreen> {
           // ✅ GIIA-DS
           _buildGroupSection("GIIADS-PROMO 2026 -ENSAM MEKNES", [
             _buildGroupTile(
-              imagePath: '',
+              imagePath: 'assets/images/giia.png',
               title: 'Annonces',
               subtitle: '~ZENLEX: D\'apres Mr Hosni: un pojet...',
               date: 'Lundi',
             ),
             _buildGroupTile(
               title: 'GIIADS-PROMO 2026 ENSAM MEKNES',
-              imagePath: 'assets/images/ceeam.jpg',
+              imagePath: 'assets/images/giia.png',
               subtitle: '~Elhassani: Nta howa lfounder...',
               date: 'Hier',
             ),
@@ -131,13 +132,13 @@ class _CommunityScreenState extends State<CommunityScreen> {
             ),
             _buildGroupTile(
               subtitle: 'Alban Ouedraogo a ajouté le groupe...',
-              imagePath: '',
+              imagePath: 'assets/images/zindi.png',
               title: 'Annonces',
               date: '3/31/25',
             ),
             _buildGroupTile(
               title: 'Zindi Burkina Faso',
-              imagePath: '',
+              imagePath: 'assets/images/zindi.png',
               subtitle: '~Regis KABORE:@Alban Ouedraogo...',
               date: 'Hier',
               showDot: true,
