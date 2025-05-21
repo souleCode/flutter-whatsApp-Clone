@@ -136,7 +136,7 @@ class _ReseauScreenState extends State<ReseauScreen> {
                   connections: 'YAHYA et 190 autres relations en commun',
                   imageUrl: 'https://randomuser.me/api/portraits/women/15.jpg',
                 ),
-                 _buildContactCard(
+                _buildContactCard(
                   name: 'Btissam Tissafi Idrissi',
                   title: 'Elève ingénieure | ENSAM-Meknès',
                   connections: 'YAHYA et 31 autres relations en commun',
@@ -160,7 +160,7 @@ class _ReseauScreenState extends State<ReseauScreen> {
                   connections: 'Moise et 190 autres relations en commun',
                   imageUrl: 'https://randomuser.me/api/portraits/women/15.jpg',
                 ),
-                 _buildContactCard(
+                _buildContactCard(
                   name: 'Btissam Tissafi Idrissi',
                   title: 'Elève ingénieure | ENSAM-Meknès',
                   connections: 'Yonli et 31 autres relations en commun',

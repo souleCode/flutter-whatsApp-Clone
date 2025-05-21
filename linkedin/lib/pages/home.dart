@@ -72,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
               commentCount: '1 commentaire',
             ),
             buildPostCard(
-              avatarUrl: '',
+              avatarUrl: 'https://randomuser.me/api/portraits/men/12.jpg',
               username: 'MDPI',
               subtitle: '73180 abonnés ',
               timeInfo: 'Post sponsorisé',
