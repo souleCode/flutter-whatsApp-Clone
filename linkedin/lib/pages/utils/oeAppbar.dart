@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const CustomAppBar({super.key});
+class OffreAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const OffreAppBar({super.key});
   @override
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white,
+
       elevation: 0,
       title: Row(
         children: [
@@ -31,10 +32,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               child: TextField(
                 decoration: InputDecoration(
                   icon: const Icon(
-                    Icons.search,
+                    Icons.work_outline,
                     color: Color.fromARGB(255, 28, 25, 25),
                   ),
-                  hintText: "Recherche",
+                  hintText: "Recherche une offre ...",
                   hintStyle: const TextStyle(
                     color: Color.fromARGB(255, 27, 23, 23),
                   ),
@@ -45,8 +46,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             ),
           ),
           const SizedBox(width: 10),
-
-          // Icône de message
           const Icon(Icons.message, color: Color.fromARGB(255, 14, 12, 12)),
         ],
       ),
@@ -56,5 +55,3 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
-
-//
